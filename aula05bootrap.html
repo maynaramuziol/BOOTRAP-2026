@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula05 - site com javascript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <style>
+            body{
+            background: linear-gradient(135deg, #4e54c8 0% #8f94fb 100%)
+            nin-height 100vh;
+            display: fex;
+            align-items: center;
+            justify-content: center;
+            }
+             
+            .login-card{
+                background-color: wheat;
+                max-width: 420%;
+                width: 100%;
+                border: none;
+                border-radius: 1rem;
+            }
+
+            .form-control.is-valid, .form-control.is-valid{
+                background-attachment: fixed;
+            }
+
+        </style>
+</head>
+<body>
+    <div class="container d-flex justify-content-center">
+        <div class="card-long shadow-lg p-4 bg-white">
+            <div><i class="bi-shield-lock-fill tex-primary"></i>
+            <h3 class="fw-bold mt-2 ">Acesso ao sistema</h3>
+            <p class="tex-muted">Digite suas credenciais para continuar</p>
+            </div>
+
+            <form id="logiform" novalidate>
+                <!--CAMPO-SENHA-->
+                <div class="mb-3">
+                    <label for="email" class="form-label">email</label>
+                    <div class="input-group">
+                        <span class="input-group"><i class="bi bi-envelope"></i></span>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="sequemcia">
+
+                    </div>
+                    <div class="invalid-feedback" id="emailErro"></div>
+                </div>
+            </form>
+            <form id="logiform" novalidate>
+                <!--CAMPO-SENHA-->
+                <div class="mb-3">
+                    <label for="password" class="form-label">senha</label>
+                    <div class="input-group">
+                        <span class="input-group"><i class="bi bi-envelope"></i></span>
+                        <input type="senha" class="form-control" id="senha" name="senha" placeholder="sequemcia">
+                        <button class="btn btn-outline-secondary" id="togglePass" tabindex="-1">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </div>
+                    <div class="invalid-feedback" id="passwordErro"></div>
+                </div>
+                  <!--LEMBRAR  ESQUECI-->
+                  <div class="d-flex justify-content-between mb-3">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input"id=remember>
+                        <label for="remember" class="form-check-label">Lembrar-me</label>
+                    </div>
+                    <a href="" class="tex-decoration-name small">Esqueceu a senha</a>
+                  </div>
+
+                  <button class="btn btn-primary w-100 fw-semibold" id="submiBtn">
+                    <span class="d-flex aling-items-center justify-content-between">
+                        <span class="spinner-border spinner-border-sm me-2 d-none" id="dtnSpinnr"></span>
+                        Entrar
+                    </span>
+                  </button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const teleEnvio= document.getElementById('telaEnvio');
+        const teleChat= document.getElementById('telaChat');
+        const teleTexto= document.getElementById('telaTexto');
+        const teleEnviar= document.getElementById('telaEnviar');
+        const teleVoltar= document.getElementById('telaVoltar');
+        const teleMensagem= document.getElementById('telamensagem');
+       
+        btnEnviar.onclick=() => {
+            const texto = campoTexto.value.trim();
+
+            if(text != ''){
+                
+            }
+        }
+    </script>
+    
+</body>
+</html>
